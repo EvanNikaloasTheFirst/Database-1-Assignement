@@ -163,8 +163,6 @@ ADD CONSTRAINT fk_s_prizes
 FOREIGN KEY(sponsor_id)
 REFERENCES sponsors(sponsor_id);
 
-
-
 ALTER TABLE tournament_participants
 ADD CONSTRAINT pk_tournament_participants
 PRIMARY KEY (tournament_id,player_id,team_id);

@@ -16,27 +16,27 @@ FROM players
 ORDER BY player_firstname DESC;
 
 SELECT team_name, team_id
-from teams
+FROM teams
 ORDER BY team_name DESC;
 
 -- Predicting for people who live in the UK
 SELECT player_firstname, player_lastname, country
-from players
+FROM players
 WHERE country = 'UK';
 
 -- Condition for countries that begins with F
 SELECT player_firstname, player_lastname, country
-from players
+FROM players
 WHERE country LIKE 'F%';
 
 -- Negative condition 
 SELECT player_firstname, player_lastname, country
-from players
+FROM players
 WHERE NOT country LIKE 'F%';
 
 -- Date range condition
 SELECT *
-from team_players
+FROM team_players
 WHERE date_joined BETWEEN '01-JAN-2017' AND '20-DEC-2020'
 ORDER BY date_joined ASC;
 

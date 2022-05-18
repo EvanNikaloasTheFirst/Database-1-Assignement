@@ -44,6 +44,20 @@ PRIMARY KEY(sponsor_id);
 PURGE RECYCLEBIN;
 
 
+-- sequence for prizes 
+
+CREATE SEQUENCE seq_prizes
+INCREMENT by 1
+START WITH 20;
+
+
+-- sequence for sponsors 
+
+CREATE SEQUENCE seq_sponsors
+INCREMENT by 1
+START WITH 30;
+
+
 
 
 

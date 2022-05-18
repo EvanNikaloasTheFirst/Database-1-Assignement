@@ -57,6 +57,26 @@ CREATE SEQUENCE seq_sponsors
 INCREMENT by 1
 START WITH 30;
 
+-- all records for prizes
+SELECT * 
+FROM prizes;
+-- all records for sponsors
+SELECT *
+FROM  sponsors;
+-- projection with 3 columns 
+SELECT achievement, prize_id, sponsor_id
+FROM prizes 
+WHERE achievements = 'GOATS';
+-- negative condition 
+SELECT achievement, prize_id, sponsor_id
+FROM prizes 
+WHERE NOT achievements = 'GOATS';
+-- conditions for achievement that ends with T
+SELECT * 
+FROM prizes
+WHERE advertisements = '%T'
+
+
 
 
 
